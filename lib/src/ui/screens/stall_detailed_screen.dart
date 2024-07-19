@@ -161,13 +161,13 @@ class _StallDetailedScreenState extends State<StallDetailedScreen> {
 
   bool _systemNavigationHandler() {
     if (_stallListBloc.isDocUploading || _stallListBloc.isLoading) {
-      Navigator.pop(context);
-    }
-    if (fullViewTag != 0) {
+      return false;
+    } else if (fullViewTag != 0) {
       _stallListBloc.add(MediaExpandedViewEvent(fullViewTag: 0));
       return false;
+    } else {
+      return true;
     }
-    return true;
   }
 
   Widget _stallDetailedView(BuildContext context) {
@@ -360,7 +360,7 @@ class _StallDetailedScreenState extends State<StallDetailedScreen> {
                   color: Theme.of(context).colorScheme.primary),
               padding: REdgeInsets.all(AppWidgetSize.dimen_3),
               child: Icon(Icons.arrow_back_ios_new,
-                  size: AppWidgetSize.dimen_24.w)),
+                  size: AppWidgetSize.dimen_20.w)),
         ));
   }
 
@@ -380,8 +380,9 @@ class _StallDetailedScreenState extends State<StallDetailedScreen> {
                   borderRadius: BorderRadius.all(
                       Radius.circular(AppWidgetSize.dimen_28.r)),
                   color: Theme.of(context).colorScheme.primary),
-              padding: REdgeInsets.all(AppWidgetSize.dimen_3),
-              child: Icon(Icons.ios_share, size: AppWidgetSize.dimen_24.w)),
+              padding: REdgeInsets.all(AppWidgetSize.dimen_3)
+                  .copyWith(bottom: AppWidgetSize.dimen_6),
+              child: Icon(Icons.ios_share, size: AppWidgetSize.dimen_20.w)),
         ));
   }
 
