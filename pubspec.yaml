@@ -1,0 +1,59 @@
+name: product_expo
+description: A new Flutter project.
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_bloc: ^8.1.6
+  file_picker: ^5.3.1
+  path_provider: ^2.0.9
+  video_player: ^2.7.2
+  video_thumbnail: ^0.5.3
+  carousel_slider: ^4.2.1
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^2.0.0
+
+
+flutter:
+
+  
+  uses-material-design: true
+
+  
+  assets:
+    - lib/assets/images/
+    - lib/src/data/sample_stall_list.json
+  #   - images/a_dot_ham.jpeg
+
+  fonts:
+    - family: SF Compact Display
+      fonts:
+        - asset: lib/assets/fonts/sfcompdisplay/sf-compact-display-regular.ttf
+          weight: 400
+        - asset: lib/assets/fonts/sfcompdisplay/sf-compact-display-medium.otf
+          weight: 500
+        - asset: lib/assets/fonts/sfcompdisplay/sf-compact-display-semibold.otf
+          weight: 600
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+

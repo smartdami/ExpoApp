@@ -1,0 +1,39 @@
+{
+    "stallList": [
+        {
+            "stallName": "Bean Bliss",
+            "stallId": "stall-0",
+            "stallImage": "lib/assets/images/stall_0.jpg",
+            "eventDate": "Jun 24 - Jun 25 2024",
+            "category": "Coffee House"
+        },
+        {
+            "stallName": "SRK Builders",
+            "stallId": "stall-1",
+            "stallImage": "lib/assets/images/stall_1.jpg",
+            "eventDate": "Jun 24 - Jun 25 2024",
+            "category": "Construction"
+        },
+        {
+            "stallName": "Ani Restro",
+            "stallId": "stall-2",
+            "stallImage": "lib/assets/images/stall_2.jpg",
+            "eventDate": "Jun 24 - Jun 25 2024",
+            "category": "Bar & Coffee"
+        },
+        {
+            "stallName": "ARRS Multiplex",
+            "stallId": "stall-3",
+            "stallImage": "lib/assets/images/stall_3.jpg",
+            "eventDate": "Jun 24 - Jun 25 2024",
+            "category": "Entertainment"
+        },
+        {
+            "stallName": "Kora Food Bazzar",
+            "stallId": "stall-4",
+            "stallImage": "lib/assets/images/stall_4.jpg",
+            "eventDate": "Jun 24 - Jun 25 2024",
+            "category": "Food and Bevarages"
+        }
+    ]
+}
